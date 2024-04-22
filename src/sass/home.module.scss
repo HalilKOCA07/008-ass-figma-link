@@ -1,0 +1,18 @@
+.container{
+    @apply bg-blue-300 m-5 grid-flow-row
+}
+.container{
+    .leftSide{
+       @apply  w-3/4 border-2 border-red-500 flex
+     }
+     .info{
+        @apply w-3/4 bg-orange-400 flex justify-center 
+     }
+     .leftSide img{
+        @apply w-[450px]
+     }
+     .imageContainer{
+        @apply bg-green-300 w-1/4
+     }
+    
+}
