@@ -1,10 +1,14 @@
+const withMT = require("@material-tailwind/react/utils/withMT");
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+module.exports =  withMT({
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{html,js,jsx}",
+    "./node_modules/tw-elements/js/**/*.js"
   ],
   theme: {
     extend: {},
   },
-  plugins: [require("rippleui")],
-}
+	plugins: [],
+  darkMode: "class"
+});
